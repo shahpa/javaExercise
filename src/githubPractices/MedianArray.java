@@ -3,10 +3,14 @@ package githubPractices;
 public class MedianArray {
 
 	public static void main(String[] args) {
-		int[] array1 = new int[]{1,2,3,4,5,6,7, 8};
-		int[] array2 = new int[]{5,6,7,8,9,10,11};
+		int[] array1 = new int[]{1,2,3};
+		int[] array2 = new int[]{3,4,5};
 		
-		System.out.println( "" + findMedian(array1));
+		//object for finding a median
+		MedianClass obj = new MedianClass();
+		int ans = obj.findMedian(array1, 0, array1.length-1, array2, 0, array2.length-1);
+		System.out.println(ans);
+		System.out.println( " " + findMedian(array1));
 		
 
 	}
@@ -24,3 +28,5 @@ public class MedianArray {
 	}
 
 }
+
+
