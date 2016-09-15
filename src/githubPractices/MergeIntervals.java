@@ -5,19 +5,17 @@ import java.util.*;
 public class MergeIntervals {
 
 	public static void main(String[] args) {
-		
+		// TODO Auto-generated method stub
 
 		ArrayList<Intervals> list = new ArrayList<Intervals>();
 		
+		list.add(new Intervals(9, 12));
+		list.add(new Intervals(4, 7));
 		list.add(new Intervals(8, 10));
-		list.add(new Intervals(1, 3));
-		list.add(new Intervals(2, 6));
-		list.add(new Intervals(3, 9));
-		list.add(new Intervals(15, 18));
 		
 		System.out.println("List is : " + list);
 		
-		System.out.println("merged list is : " + merge(list));
+		System.out.println(merge(list));
 		
 	}
 
@@ -31,36 +29,7 @@ public class MergeIntervals {
 			}
 		});
 		System.out.println("Sorted List is : " + list);
-		ArrayList<Intervals> result = new ArrayList<Intervals>();
-		Intervals prev = list.get(0);
-		result.add(prev);
-		for(int i=1; i<list.size(); i++)  {
-			Intervals current = list.get(i);
-			
-			if(prev.hi >= current.lo)  {
-				Intervals newInterval = new Intervals(prev.lo, Math.max(prev.hi, current.hi));
-				prev = newInterval;
-			}
-			else  {
-				prev = current;
-			}
-			
-			removeIfExitst(result, prev);
-			result.add(prev);
-		}
 		return list;
-	}
-
-	private static void removeIfExitst(ArrayList<Intervals> result,
-			Intervals prev) {
-		// TODO Auto-generated method stub
-		if(result.size()>0)  {
-			Intervals existing = result.get(result.size()-1);
-			if(existing.lo == prev.lo)  {
-				result.remove(result.size()-1);
-			}
-		}
-		
 	}
 
 }
