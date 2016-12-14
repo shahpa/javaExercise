@@ -19,7 +19,7 @@ public class HelloWorld {
 				MultiThreading mt = new MultiThreading();
 				mt.testThread();
 				
-				
+	//testing			
 	}
 	
 	static int wordpattern(String pattern, String input) {
