@@ -29,6 +29,14 @@ public class MergeIntervals {
 			}
 		});
 		System.out.println("Sorted List is : " + list);
+		
+		Intervals prev = list.get(0);
+		for(int i=1; i<list.size(); i++)  {
+			Intervals current = list.get(i);
+			if(prev.hi >= current.lo)  {
+				Intervals newInterval = new Intervals(prev.lo, Math.max(prev.hi, current.hi));
+			}
+		}
 		return list;
 	}
 
