@@ -3,7 +3,7 @@ package githubPractices;
 public class MineSweeper {
 	
 	//this is a small program of MineSweeper
-	
+	//
 	 public static void main(String[] args) { 
 	        /*int m = Integer.parseInt(args[0]);
 	        int n = Integer.parseInt(args[1]);
