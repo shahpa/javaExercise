@@ -1,5 +1,8 @@
 package githubPractices;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class FindXX {
 
 	public static void main(String[] args) {
@@ -9,6 +12,18 @@ public class FindXX {
 		//String str = "xcxx";
 		String str = "zzzzx";
 		System.out.println(doubleX(str));
+		
+		
+		List<String> numbers = new ArrayList<String>();
+		for(int i = 0 ; i< 100; i++)  {
+			numbers.add(String.valueOf(i));
+		}
+		for(int i = 0 ; i< numbers.size(); i++)  {
+			System.out.println(numbers.get(i));
+		}
+		
+		
+		
 	}
 	static boolean doubleX(String str) {
 		int index = str.indexOf('x');
