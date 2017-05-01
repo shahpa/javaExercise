@@ -1,4 +1,5 @@
-package githubPractices;
+package githubPractices.tree;
+
 
 public class LongestSubsequence {
 	int max = 0;

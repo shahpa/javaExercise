@@ -1,4 +1,4 @@
-package githubPractices;
+package githubPractices.array;
 
 public class KthLargest {
 

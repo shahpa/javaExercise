@@ -1,4 +1,4 @@
-package githubPractices;
+package githubPractices.tree;
 
 import java.util.ArrayList;
 import java.util.Collections;

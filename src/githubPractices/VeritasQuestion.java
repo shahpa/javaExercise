@@ -1,16 +1,16 @@
-package githubPractices;
+/*package githubPractices;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+*//**
  * 
  * @author Parth_Shah
  *
  * Producer - consumer example
  * 
  * 
- */
+ *//*
 
 
 
@@ -94,3 +94,4 @@ int counter = c2.size;
 	
 	
 }
+*/

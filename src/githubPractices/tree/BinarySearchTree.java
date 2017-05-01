@@ -1,4 +1,5 @@
-package githubPractices;
+package githubPractices.tree;
+
 
 //usually private but public because its been used
 class TreeNode {

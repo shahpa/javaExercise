@@ -1,6 +1,6 @@
 package githubPractices.tree;
 
-class TreeNode  {
+/*class TreeNode  {
 	int data;
 	TreeNode left;
 	TreeNode right;
@@ -8,7 +8,7 @@ class TreeNode  {
 	public TreeNode(int data)  {
 		this.data = data;
 	}
-}
+}*/
 public class Inorder {
 
 	public static void main(String[] args) {
