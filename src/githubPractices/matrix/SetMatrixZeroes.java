@@ -15,7 +15,7 @@ public class SetMatrixZeroes {
 		setZeroes(matrix, 4, 4);
 	}
 
-	static void setZeroes(int[][] matrix int m, int n)  {
+	static void setZeroes(int[][] matrix, int m, int n)  {
 		for(int i = 0 ; i < m ; i++)  {
 			for(int j=0;j<n;j++)  {
 				if(matrix[i][j]  == 0)  {

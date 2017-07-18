@@ -1,11 +1,10 @@
 package githubPractices;
 
+import java.awt.List;
+import java.util.ArrayList;
+import java.util.LinkedList;
+
 public class CohesityProblem {
-
-	
-	import java.io.*;
-	import java.util.*;
-
 	/*
 	 * To execute Java, please define "static void main" on a class
 	 * named Solution.
@@ -58,10 +57,9 @@ public class CohesityProblem {
 
 	class Node1  {
 	  int data;
-	  List<Node1> nodeList = new ArrayList<Node1>();
-	  Node1(int data)  {
-	    Node1 n = new Node1();
-	    n.data = data;
+	  ArrayList<Node1> nodeList = new ArrayList<Node1>();
+	  public Node1(int data)  {
+	    this.data = data;
 	  }
 	}
 
